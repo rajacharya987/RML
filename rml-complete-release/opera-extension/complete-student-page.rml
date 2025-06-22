@@ -1,0 +1,171 @@
+{title}My Amazing Student Portfolio{.title}
+
+{success}Welcome to my first complete RML webpage! I've learned so much about web development.{.success}
+
+{card}
+{subtitle}About Me{.subtitle}
+{text}Hi! I'm Alex, a 9th grade student learning web development with RML. It's so much easier than HTML!{.text}
+
+{text}Here's what I love about coding:{.text}
+{list}
+    {item}**RML** makes it simple to create web pages{.item}
+    {item}**RSS** styling is way easier than CSS{.item}
+    {item}I can focus on *content* instead of confusing syntax{.item}
+    {item}My teacher says I'm learning `real programming skills`{.item}
+{.list}
+{.card}
+
+{lesson}
+{subtitle}What I've Learned So Far{.subtitle}
+
+{step}
+{bold}Step 1: Basic Tags{.bold}
+{text}I learned how to use {code}{title}{.code}, {code}{text}{.code}, {code}{bold}{.code}, and {code}{italic}{.code} tags.{.text}
+{.step}
+
+{step}
+{bold}Step 2: Lists and Links{.bold}
+{text}Now I can create lists and add links like this: {link href="https://github.com"}My GitHub Profile{.link}{.text}
+{.step}
+
+{step}
+{bold}Step 3: Educational Elements{.bold}
+{text}The coolest part is using special tags for schoolwork!{.text}
+{.step}
+{.lesson}
+
+{exercise}
+{bold}My Favorite Exercise{.bold}
+
+{question}What's the capital of France?{.question}
+{answer}Paris! 🇫🇷{.answer}
+
+{question}What's 2 + 2?{.question}
+{answer}4 (easy math!){.answer}
+
+{tip}Using question and answer tags makes studying so much more organized!{.tip}
+{.exercise}
+
+{section}
+{subtitle}My Hobbies{.subtitle}
+
+{container}
+{bold}Sports I Play:{.bold}
+{orderedlist}
+    {item}Basketball 🏀{.item}
+    {item}Soccer ⚽{.item}
+    {item}Swimming 🏊{.item}
+{.orderedlist}
+{.container}
+
+{container}
+{bold}Games I Love:{.bold}
+{bulletlist}
+    {item}Minecraft (building awesome structures){.item}
+    {item}Roblox (coding my own games){.item}
+    {item}Chess (strategy is everything){.item}
+{.bulletlist}
+{.container}
+
+{container}
+{bold}Subjects I Enjoy:{.bold}
+{list}
+    {item}{highlight}Computer Science{.highlight} - Obviously my favorite!{.item}
+    {item}Math - Because coding needs logic{.item}
+    {item}Art - Design makes websites beautiful{.item}
+    {item}English - Good writing explains code clearly{.item}
+{.list}
+{.container}
+{.section}
+
+{tutorial}
+{subtitle}Teaching Others{.subtitle}
+
+{text}Now that I know RML, I want to teach my friends! Here's what I tell them:{.text}
+
+{info}RML is perfect for beginners because it uses simple English words instead of confusing abbreviations.{.info}
+
+{example}
+{bold}Instead of this HTML:{.bold}
+{code}&lt;h1&gt;Title&lt;/h1&gt;
+&lt;p&gt;Text&lt;/p&gt;
+&lt;strong&gt;Bold&lt;/strong&gt;{.code}
+
+{bold}We write this RML:{.bold}
+{code}{title}Title{.title}
+{text}Text{.text}
+{bold}Bold{.bold}{.code}
+
+{text}See how much clearer that is?{.text}
+{.example}
+{.tutorial}
+
+{homework}
+{bold}My Latest Assignment{.bold}
+
+{text}Create a webpage about environmental protection using:{.text}
+{list}
+    {item}At least 3 different heading levels{.item}
+    {item}Images with proper descriptions{.item}
+    {item}A table comparing renewable vs non-renewable energy{.item}
+    {item}Links to environmental organizations{.item}
+    {item}Colored sections using RSS styling{.item}
+{.list}
+
+{warning}Due date: Next Friday! Don't forget to validate your RML syntax.{.warning}
+{.homework}
+
+{quiz}
+{bold}Quick Self-Test{.bold}
+
+{question}1. How do you close an RML tag?{.question}
+{answer}With a dot before the tag name: {code}{.tagname}{.code}{.answer}
+
+{question}2. What's better about RML than HTML?{.question}
+{answer}
+- Uses plain English words
+- Clear opening and closing syntax  
+- No confusing angle brackets
+- Built-in educational features
+{.answer}
+
+{question}3. How do you make text bold in RML?{.question}
+{answer}Use {code}{bold}text{.bold}{.code} or the shortcut {code}**text**{.code}{.answer}
+{.quiz}
+
+{section}
+{subtitle}My Future Goals{.subtitle}
+
+{card}
+{bold}What I Want to Learn Next:{.bold}
+{orderedlist}
+    {item}Advanced RSS styling with animations{.item}
+    {item}How to add interactive elements{.item}
+    {item}Building a complete website{.item}
+    {item}Maybe even learning real HTML and CSS!{.item}
+{.orderedlist}
+
+{text}But for now, RML is perfect for learning the basics without getting overwhelmed.{.text}
+{.card}
+
+{note}My teacher says that once I master RML, learning HTML will be super easy because I already understand the concepts!{.note}
+{.section}
+
+{section}
+{subtitle}Message to Other Students{.subtitle}
+
+{container}
+{text}If you're just starting to learn web development, I totally recommend RML! Here's why:{.text}
+
+{success}✅ You can focus on learning *concepts* instead of memorizing syntax{.success}
+{info}ℹ️ The educational tags help with homework and projects{.info}
+{tip}💡 Once you know RML, other languages seem less scary{.tip}
+{warning}⚠️ Don't skip practicing - code every day, even if it's just 10 minutes!{.warning}
+{.container}
+{.section}
+
+{footer}
+{text}Thanks for visiting my portfolio! Feel free to {link href="mailto:alex@student.school"}email me{.link} if you want to learn RML together.{.text}
+
+{text}Created with 💜 using RML & RSS | Student Portfolio 2024{.text}
+{.footer} 

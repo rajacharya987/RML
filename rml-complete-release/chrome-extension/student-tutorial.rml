@@ -1,0 +1,289 @@
+{title}RML Student Tutorial - Learn Easy Web Development!{.title}
+
+{success}Welcome to your first RML lesson! This tutorial will teach you everything step by step.{.success}
+
+{lesson}
+{subtitle}Lesson 1: What is RML?{.subtitle}
+
+{text}RML stands for {bold}RazzMarkupLanguage{.bold}. It's like HTML but much easier to learn and use! Instead of confusing brackets like {code}<h1>{.code}, we use simple curly braces like {code}{title}{.code}.{.text}
+
+{info}RML was created specifically for students who want to learn web development without getting overwhelmed by complex syntax.{.info}
+
+{question}Why is RML easier than HTML?{.question}
+{answer}
+- Uses simple English words like {code}title{.code} instead of {code}h1{.code}
+- Clear closing tags with dots: {code}{.title}{.code}
+- No confusing angle brackets {code}< >{.code}
+- Beginner-friendly tag names
+{.answer}
+{.lesson}
+
+{lesson}
+{subtitle}Lesson 2: Basic Text Tags{.subtitle}
+
+{text}Let's learn the most important text tags first:{.text}
+
+{exercise}
+{bold}Try This Exercise:{.bold}
+Copy this code and save it as {code}exercise1.rml{.code}:
+
+{code}
+{title}My First Webpage{.title}
+{subtitle}About Me{.subtitle}
+{text}Hi! I'm learning RML and it's really fun!{.text}
+{bold}This text is bold{.bold}
+{italic}This text is italic{.italic}
+{underline}This text is underlined{.underline}
+{.code}
+{.exercise}
+
+{note}Remember: Every opening tag like {code}{title}{.code} needs a closing tag like {code}{.title}{.code} with a dot!{.note}
+{.lesson}
+
+{lesson}
+{subtitle}Lesson 3: Lists and Links{.subtitle}
+
+{text}Lists help organize information. Links connect to other pages.{.text}
+
+{example}
+{bold}Example: Making a list{.bold}
+{code}
+{list}
+    {item}First thing{.item}
+    {item}Second thing{.item}
+    {item}Third thing{.item}
+{.list}
+{.code}
+
+{bold}Example: Making a link{.bold}
+{code}
+{link href="https://www.google.com"}Click here to visit Google{.link}
+{.code}
+{.example}
+
+{exercise}
+{bold}Your Turn!{.bold}
+Create a list of your three favorite:
+1. Foods
+2. Movies  
+3. Games
+
+Then add a link to your favorite website!
+{.exercise}
+{.lesson}
+
+{lesson}
+{subtitle}Lesson 4: Special Message Boxes{.subtitle}
+
+{text}RML has special tags that create colorful message boxes:{.text}
+
+{success}This is a success message - use it when something goes right!{.success}
+
+{warning}This is a warning message - use it to alert users about something important!{.warning}
+
+{error}This is an error message - use it when something goes wrong!{.error}
+
+{info}This is an info message - use it to share helpful information!{.info}
+
+{tip}This is a tip message - use it to give helpful advice!{.tip}
+
+{note}This is a note message - use it for additional information!{.note}
+
+{example}
+{code}
+{success}You did great!{.success}
+{warning}Don't forget to save your file!{.warning}
+{error}Something went wrong!{.error}
+{info}Here's some useful information.{.info}
+{tip}Pro tip: Always test your code!{.tip}
+{note}Remember to backup your work.{.note}
+{.code}
+{.example}
+{.lesson}
+
+{lesson}
+{subtitle}Lesson 5: Educational Tags{.subtitle}
+
+{text}RML has special tags perfect for homework, quizzes, and lessons:{.text}
+
+{homework}
+{bold}Homework Assignment{.bold}
+{text}Create a webpage about yourself using at least 5 different RML tags.{.text}
+
+{question}What should you include?{.question}
+{answer}
+- Your name as a title
+- A paragraph about yourself
+- A list of hobbies
+- A link to something you like
+- At least one special message box
+{.answer}
+{.homework}
+
+{quiz}
+{bold}Quick Quiz{.bold}
+
+{question}1. What symbol do we put before closing tag names?{.question}
+{answer}A dot (.) - Example: {code}{.title}{.code}{.answer}
+
+{question}2. Which tag makes text bold?{.question}
+{answer}The {code}{bold}{.code} tag{.answer}
+
+{question}3. How do you create a link?{.question}
+{answer}{code}{link href="url"}Link text{.link}{.code}{.answer}
+{.quiz}
+{.lesson}
+
+{lesson}
+{subtitle}Lesson 6: Images and Media{.subtitle}
+
+{text}Adding pictures and videos makes your webpage more interesting!{.text}
+
+{example}
+{bold}Adding an image:{.bold}
+{code}
+{image src="my-photo.jpg" alt="A photo of me"}
+{.code}
+
+{bold}Adding a video:{.bold}
+{code}
+{video src="my-video.mp4"}My cool video{.video}
+{.code}
+{.example}
+
+{tip}Always add {code}alt="description"{.code} to images so people with screen readers know what the image shows!{.tip}
+{.lesson}
+
+{lesson}
+{subtitle}Lesson 7: Page Layout{.subtitle}
+
+{text}Use these tags to organize your page layout:{.text}
+
+{container}
+{bold}Container Box{.bold}
+{text}This is inside a container - it's like a box that holds other content.{.text}
+{.container}
+
+{card}
+{bold}Card Box{.bold}
+{text}Cards are special containers that look nice and stand out from the rest of the page.{.text}
+{.card}
+
+{section}
+{bold}Section{.bold}
+{text}Sections help divide your page into different parts, like chapters in a book.{.text}
+{.section}
+
+{example}
+{code}
+{header}
+    {title}My Website{.title}
+    {navigation}Menu goes here{.navigation}
+{.header}
+
+{main}
+    {section}
+        {subtitle}About Me{.subtitle}
+        {text}Main content goes here{.text}
+    {.section}
+{.main}
+
+{footer}
+    {text}Copyright 2024{.text}
+{.footer}
+{.code}
+{.example}
+{.lesson}
+
+{lesson}
+{subtitle}Lesson 8: Shortcuts for Faster Typing{.subtitle}
+
+{text}RML has shortcuts that make typing even faster:{.text}
+
+{info}You can use these shortcuts instead of full tag names:{.info}
+
+{table}
+{row}
+    {headercell}Shortcut{.headercell}
+    {headercell}Full Version{.headercell}
+    {headercell}Result{.headercell}
+{.row}
+{row}
+    {cell}**bold**{.cell}
+    {cell}{code}{bold}bold{.bold}{.code}{.cell}
+    {cell}{bold}bold{.bold}{.cell}
+{.row}
+{row}
+    {cell}*italic*{.cell}
+    {cell}{code}{italic}italic{.italic}{.code}{.cell}
+    {cell}{italic}italic{.italic}{.cell}
+{.row}
+{row}
+    {cell}__underline__{.cell}
+    {cell}{code}{underline}underline{.underline}{.code}{.cell}
+    {cell}{underline}underline{.underline}{.cell}
+{.row}
+{row}
+    {cell}`code`{.cell}
+    {cell}{code}{code}code{.code}{.code}{.cell}
+    {cell}{code}code{.code}{.cell}
+{.row}
+{row}
+    {cell}- item{.cell}
+    {cell}{code}{item}item{.item}{.code}{.cell}
+    {cell}• item{.cell}
+{.row}
+{.table}
+{.lesson}
+
+{lesson}
+{subtitle}Final Challenge{.subtitle}
+
+{homework}
+{bold}Create Your Own Tutorial Page{.bold}
+
+{text}Now it's time to put everything together! Create a new .rml file that teaches someone else about your favorite hobby or subject.{.text}
+
+{text}Your tutorial should include:{.text}
+{list}
+    {item}A main title and at least 2 subtitles{.item}
+    {item}At least 3 paragraphs of text{.item}
+    {item}One list (bullet or numbered){.item}
+    {item}At least one link{.item}
+    {item}At least 2 different message boxes (success, warning, info, etc.){.item}
+    {item}At least one example or exercise{.item}
+    {item}Some bold, italic, or underlined text{.item}
+{.list}
+
+{question}Need ideas for topics?{.question}
+{answer}
+- How to take care of a pet
+- How to play your favorite game
+- How to cook something simple
+- How to draw or paint
+- How to play a musical instrument
+- How to do a sport or exercise
+{.answer}
+{.homework}
+{.lesson}
+
+{success}Congratulations! You've completed the RML tutorial! 🎉{.success}
+
+{card}
+{bold}What You've Learned:{.bold}
+{list}
+    {item}How to use basic text tags{.item}
+    {item}How to create lists and links{.item}
+    {item}How to use special message boxes{.item}
+    {item}How to add images and media{.item}
+    {item}How to organize page layout{.item}
+    {item}How to use typing shortcuts{.item}
+    {item}How to create educational content{.item}
+{.list}
+
+{text}You're now ready to create amazing webpages with RML! Remember to practice and experiment with different combinations of tags.{.text}
+{.card}
+
+{footer}
+{text}{italic}Happy coding! 🚀 - The RML Team{.italic}{.text}
+{.footer} 
