@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RML Renderer</title>
+    <style>
+        body {
+            width: 300px;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+        }
+        
+        .subtitle {
+            font-size: 12px;
+            opacity: 0.8;
+            margin: 5px 0 0 0;
+        }
+        
+        .status {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .status-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .status-text {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .actions {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        .syntax-help {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-size: 12px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .syntax-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .syntax-example {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 8px;
+            border-radius: 5px;
+            font-family: monospace;
+            margin: 5px 0;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 11px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">🚀</div>
+        <h1 class="title">RML Renderer</h1>
+        <p class="subtitle">RazzMarkupLanguage Extension</p>
+    </div>
+    
+    <div class="status">
+        <div class="status-title">Status</div>
+        <div class="status-text" id="statusText">Checking current page...</div>
+    </div>
+    
+    <div class="actions">
+        <button class="btn" id="parseBtn">Parse Current Page</button>
+        <button class="btn" id="toggleBtn">Toggle RML Rendering</button>
+        <button class="btn" id="helpBtn">View Documentation</button>
+    </div>
+    
+    <div class="syntax-help">
+        <div class="syntax-title">Quick RML Syntax:</div>
+        <div class="syntax-example">{head1}Title{.head1}</div>
+        <div class="syntax-example">{para}Text{.para}</div>
+        <div class="syntax-example">{bold}Bold{.bold}</div>
+        <div class="syntax-example">{link href="url"}Link{.link}</div>
+    </div>
+    
+    <div class="footer">
+        RML v1.0.0 - Powered by Chrome Extensions
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html> 

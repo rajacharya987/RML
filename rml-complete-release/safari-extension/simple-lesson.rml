@@ -1,0 +1,104 @@
+{title}My First RML Lesson{.title}
+
+{success}Welcome to your first RML lesson! Let's learn step by step.{.success}
+
+{lesson}
+{subtitle}What is RML?{.subtitle}
+
+{text}RML stands for {bold}RazzMarkupLanguage{.bold}. It's a simple way to create web pages without the complex HTML syntax.{.text}
+
+{info}RML uses curly braces {} and dots (.) to make tags easy to understand.{.info}
+
+{example}
+{text}Instead of writing: {code}<h1>Title</h1>{.code}{.text}
+{text}You write: {code}{title}Title{.title}{.code}{.text}
+{text}Much easier, right?{.text}
+{.example}
+{.lesson}
+
+{lesson}
+{subtitle}Basic Tags{.subtitle}
+
+{text}Here are the most important tags you'll use:{.text}
+
+{table}
+{row}
+    {headercell}Tag{.headercell}
+    {headercell}What it does{.headercell}
+    {headercell}Example{.headercell}
+{.row}
+{row}
+    {cell}{code}{title}{.code}{.cell}
+    {cell}Big heading{.cell}
+    {cell}{code}{title}My Page{.title}{.code}{.cell}
+{.row}
+{row}
+    {cell}{code}{text}{.code}{.cell}
+    {cell}Regular text{.cell}
+    {cell}{code}{text}Hello world{.text}{.code}{.cell}
+{.row}
+{row}
+    {cell}{code}{bold}{.code}{.cell}
+    {cell}Bold text{.cell}
+    {cell}{code}{bold}Important{.bold}{.code}{.cell}
+{.row}
+{row}
+    {cell}{code}{list}{.code}{.cell}
+    {cell}Bullet list{.cell}
+    {cell}{code}{list}{item}Item{.item}{.list}{.code}{.cell}
+{.row}
+{.table}
+{.lesson}
+
+{exercise}
+{bold}Your First Exercise{.bold}
+
+{text}Create a simple page about yourself using these tags:{.text}
+
+{orderedlist}
+    {item}Use {code}{title}{.code} for your name{.item}
+    {item}Use {code}{text}{.code} to describe yourself{.item}
+    {item}Use {code}{list}{.code} for your hobbies{.item}
+    {item}Use {code}{bold}{.code} to highlight something important{.item}
+{.orderedlist}
+
+{tip}Save your file with a .rml extension and open it in Chrome!{.tip}
+{.exercise}
+
+{quiz}
+{bold}Quick Quiz{.bold}
+
+{question}1. What symbol comes before the closing tag name?{.question}
+{answer}A dot (.) - Example: {code}{.title}{.code}{.answer}
+
+{question}2. How do you make text bold?{.question}
+{answer}Use the {code}{bold}{.code} tag{.answer}
+
+{question}3. What's the main difference between RML and HTML?{.question}
+{answer}RML uses curly braces {} instead of angle brackets < >{.answer}
+{.quiz}
+
+{homework}
+{bold}Homework Assignment{.bold}
+
+{text}Create a webpage about your favorite animal using at least:{.text}
+{list}
+    {item}One title{.item}
+    {item}Two paragraphs of text{.item}
+    {item}One list of facts{.item}
+    {item}Bold text for important words{.item}
+{.list}
+
+{text}Save it as "favorite-animal.rml" and share it with the class!{.text}
+{.homework}
+
+{card}
+{bold}Congratulations! 🎉{.bold}
+{text}You've completed your first RML lesson. You now know how to create basic web pages using simple, easy-to-understand tags.{.text}
+
+{text}Keep practicing and soon you'll be creating amazing websites!{.text}
+{.card}
+
+{footer}
+{text}{italic}Next lesson: Adding colors and styles with RSS!{.italic}{.text}
+{.footer} 
