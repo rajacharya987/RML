@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RML Tutorial - Learn RazzMarkupLanguage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .lesson {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 30px 0;
+            border-left: 5px solid #667eea;
+        }
+
+        .lesson h2 {
+            color: #667eea;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .lesson h3 {
+            color: #495057;
+            margin: 20px 0 10px 0;
+        }
+
+        .code-example {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+        }
+
+        .output-preview {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+
+        .tip {
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+            border-left: 4px solid #17a2b8;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+
+        .tip h4 {
+            color: #0c5460;
+            margin-bottom: 10px;
+        }
+
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+
+        .success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+
+        .exercise {
+            background: #e3f2fd;
+            border: 1px solid #bbdefb;
+            border-left: 4px solid #2196f3;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .exercise h4 {
+            color: #1565c0;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .navigation {
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 1px solid #dee2e6;
+            text-align: center;
+        }
+
+        .nav-link {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background: #e9ecef;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .table th, .table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .table th {
+            background: #f8f9fa;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                border-radius: 10px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 RML Tutorial</h1>
+            <p>Learn RazzMarkupLanguage - The Educational Web Development Language</p>
+        </div>
+
+        <div class="navigation">
+            <a href="#introduction" class="nav-link">🏠 Introduction</a>
+            <a href="#basics" class="nav-link">📝 Basics</a>
+            <a href="#styling" class="nav-link">🎨 RSS Styling</a>
+            <a href="#educational" class="nav-link">🎓 Educational Tags</a>
+            <a href="#advanced" class="nav-link">🚀 Advanced</a>
+            <a href="#examples" class="nav-link">💡 Examples</a>
+        </div>
+
+        <div class="content">
+            <div id="introduction" class="lesson">
+                <h2>📚 What is RML?</h2>
+                <p>
+                    <strong>RML (RazzMarkupLanguage)</strong> is an educational markup language designed to make web development 
+                    accessible for students and beginners. Instead of using complex HTML syntax with angle brackets, 
+                    RML uses simple curly braces that are easier to read and understand.
+                </p>
+                
+                <h3>🎯 Why RML?</h3>
+                <ul>
+                    <li><strong>Beginner-friendly:</strong> Simple {tag} syntax instead of &lt;tag&gt;</li>
+                    <li><strong>Educational focus:</strong> Built-in tags for lessons, questions, and exercises</li>
+                    <li><strong>Visual styling:</strong> RSS (Razz Styling Style) with [property: value;] syntax</li>
+                    <li><strong>Cross-browser:</strong> Works on Chrome, Firefox, Safari, Edge, and mobile</li>
+                    <li><strong>Real-time:</strong> See changes instantly as you type</li>
+                </ul>
+
+                <div class="success">
+                    <h4>✅ Perfect for Students!</h4>
+                    <p>RML eliminates the complexity of HTML while teaching the same concepts. Students can focus on learning web structure and design principles without getting lost in syntax.</p>
+                </div>
+            </div>
+
+            <div id="basics" class="lesson">
+                <h2>📝 RML Basics</h2>
+                
+                <h3>Basic Syntax</h3>
+                <p>RML uses curly braces for opening tags and dot notation for closing tags:</p>
+                
+                <div class="code-example">
+{title}My First Web Page{.title}
+{text}This is a paragraph of text.{.text}
+{bold}This text is bold{.bold}
+                </div>
+
+                <div class="output-preview">
+                    <h1>My First Web Page</h1>
+                    <p>This is a paragraph of text.</p>
+                    <strong>This text is bold</strong>
+                </div>
+
+                <h3>Common Tags</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>RML Tag</th>
+                            <th>HTML Equivalent</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>{title}...{.title}</code></td>
+                            <td><code>&lt;h1&gt;...&lt;/h1&gt;</code></td>
+                            <td>Main heading</td>
+                        </tr>
+                        <tr>
+                            <td><code>{subtitle}...{.subtitle}</code></td>
+                            <td><code>&lt;h2&gt;...&lt;/h2&gt;</code></td>
+                            <td>Subheading</td>
+                        </tr>
+                        <tr>
+                            <td><code>{text}...{.text}</code></td>
+                            <td><code>&lt;p&gt;...&lt;/p&gt;</code></td>
+                            <td>Paragraph</td>
+                        </tr>
+                        <tr>
+                            <td><code>{bold}...{.bold}</code></td>
+                            <td><code>&lt;strong&gt;...&lt;/strong&gt;</code></td>
+                            <td>Bold text</td>
+                        </tr>
+                        <tr>
+                            <td><code>{italic}...{.italic}</code></td>
+                            <td><code>&lt;em&gt;...&lt;/em&gt;</code></td>
+                            <td>Italic text</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="tip">
+                    <h4>💡 Quick Tip</h4>
+                    <p>You can also use markdown-style shortcuts: <strong>**bold**</strong>, <em>*italic*</em>, <u>__underline__</u>, and <code>`code`</code></p>
+                </div>
+            </div>
+
+            <div id="styling" class="lesson">
+                <h2>🎨 RSS Styling</h2>
+                <p>RSS (Razz Styling Style) is RML's answer to CSS. Use simple bracket notation to add styles:</p>
+                
+                <div class="code-example">
+{title}[color: blue;][size: huge;]Styled Title{.title}
+{text}[background: yellow;][color: black;]Highlighted text{.text}
+{text}[color: red;][size: small;]Small red text{.text}
+                </div>
+
+                <div class="output-preview">
+                    <h1 style="color: #3498db; font-size: 32px;">Styled Title</h1>
+                    <p style="background-color: #f1c40f; color: black;">Highlighted text</p>
+                    <p style="color: #e74c3c; font-size: 12px;">Small red text</p>
+                </div>
+
+                <h3>Available Colors</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Color Name</th>
+                            <th>Preview</th>
+                            <th>Usage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>red, blue, green, yellow</td>
+                            <td><span style="background: #e74c3c; color: white; padding: 2px 8px; border-radius: 3px;">red</span> <span style="background: #3498db; color: white; padding: 2px 8px; border-radius: 3px;">blue</span></td>
+                            <td><code>[color: red;]</code></td>
+                        </tr>
+                        <tr>
+                            <td>lightred, lightblue, lightgreen</td>
+                            <td><span style="background: #ffebee; color: black; padding: 2px 8px; border-radius: 3px;">lightred</span></td>
+                            <td><code>[background: lightblue;]</code></td>
+                        </tr>
+                        <tr>
+                            <td>darkred, darkblue, darkgreen</td>
+                            <td><span style="background: #c62828; color: white; padding: 2px 8px; border-radius: 3px;">darkred</span></td>
+                            <td><code>[color: darkgreen;]</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Available Sizes</h3>
+                <div class="code-example">
+{text}[size: tiny;]Tiny text{.text}
+{text}[size: small;]Small text{.text}
+{text}[size: normal;]Normal text{.text}
+{text}[size: large;]Large text{.text}
+{text}[size: huge;]Huge text{.text}
+{text}[size: giant;]Giant text{.text}
+                </div>
+
+                <div class="output-preview">
+                    <p style="font-size: 10px;">Tiny text</p>
+                    <p style="font-size: 12px;">Small text</p>
+                    <p style="font-size: 16px;">Normal text</p>
+                    <p style="font-size: 24px;">Large text</p>
+                    <p style="font-size: 32px;">Huge text</p>
+                    <p style="font-size: 48px;">Giant text</p>
+                </div>
+            </div>
+
+            <div id="educational" class="lesson">
+                <h2>🎓 Educational Tags</h2>
+                <p>RML includes special tags designed for educational content:</p>
+
+                <h3>Lesson Structure</h3>
+                <div class="code-example">
+{lesson}
+  {title}Introduction to Web Development{.title}
+  
+  {question}What is HTML?{.question}
+  {answer}HTML is the standard markup language for web pages.{.answer}
+  
+  {exercise}
+    Create a simple web page with a title and paragraph.
+  {.exercise}
+  
+  {tip}Remember to close all your tags!{.tip}
+{.lesson}
+                </div>
+
+                <h3>Message Boxes</h3>
+                <div class="code-example">
+{success}Great job! You completed the exercise.{.success}
+{warning}Be careful with this syntax.{.warning}
+{error}Something went wrong. Check your code.{.error}
+{info}This is additional information.{.info}
+{tip}Here's a helpful tip for you.{.tip}
+                </div>
+
+                <div class="output-preview">
+                    <div class="success">Great job! You completed the exercise.</div>
+                    <div class="warning">Be careful with this syntax.</div>
+                    <div class="tip">Here's a helpful tip for you.</div>
+                </div>
+
+                <h3>All Educational Tags</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Tags</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Learning Structure</td>
+                            <td><code>{lesson}</code>, <code>{tutorial}</code>, <code>{exercise}</code>, <code>{homework}</code></td>
+                        </tr>
+                        <tr>
+                            <td>Interactive</td>
+                            <td><code>{question}</code>, <code>{answer}</code>, <code>{quiz}</code>, <code>{test}</code></td>
+                        </tr>
+                        <tr>
+                            <td>Messages</td>
+                            <td><code>{success}</code>, <code>{warning}</code>, <code>{error}</code>, <code>{info}</code>, <code>{tip}</code></td>
+                        </tr>
+                        <tr>
+                            <td>Layout</td>
+                            <td><code>{container}</code>, <code>{card}</code>, <code>{section}</code>, <code>{header}</code>, <code>{footer}</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="advanced" class="lesson">
+                <h2>🚀 Advanced Features</h2>
+                
+                <h3>Nested Tags</h3>
+                <p>You can nest tags inside each other:</p>
+                <div class="code-example">
+{container}
+  {header}
+    {title}My Website{.title}
+    {subtitle}Welcome to my site{.subtitle}
+  {.header}
+  
+  {section}
+    {text}This is the main content area.{.text}
+  {.section}
+{.container}
+                </div>
+
+                <h3>Lists</h3>
+                <div class="code-example">
+{list}
+  {item}First item{.item}
+  {item}Second item{.item}
+  {item}Third item{.item}
+{.list}
+                </div>
+
+                <h3>Links and Images</h3>
+                <div class="code-example">
+{link href="https://example.com"}Visit our website{.link}
+{image src="photo.jpg" alt="A beautiful photo"}
+                </div>
+
+                <div class="tip">
+                    <h4>💡 Pro Tip</h4>
+                    <p>Combine RSS styling with educational tags for beautiful, functional learning materials!</p>
+                </div>
+            </div>
+
+            <div id="examples" class="lesson">
+                <h2>💡 Complete Examples</h2>
+                
+                <h3>Example 1: Simple Lesson</h3>
+                <div class="code-example">
+{lesson}
+  {title}[color: blue;][size: large;]Math Lesson: Addition{.title}
+  
+  {question}What is 2 + 3?{.question}
+  {answer}[color: green;]2 + 3 = 5{.answer}
+  
+  {exercise}
+    Try solving: 5 + 7 = ?
+  {.exercise}
+  
+  {success}Great work on completing this lesson!{.success}
+{.lesson}
+                </div>
+
+                <h3>Example 2: Student Portfolio</h3>
+                <div class="code-example">
+{container}
+  {header}[background: purple;][color: white;][padding: 20px;]
+    {title}Student Portfolio{.title}
+    {subtitle}By: Alex Johnson{.subtitle}
+  {.header}
+  
+  {section}
+    {subtitle}About Me{.subtitle}
+    {text}I'm a student learning web development with RML!{.text}
+    
+    {subtitle}My Projects{.subtitle}
+    {list}
+      {item}Simple calculator{.item}
+      {item}Personal website{.item}
+      {item}RML tutorial{.item}
+    {.list}
+  {.section}
+{.container}
+                </div>
+
+                <div class="exercise">
+                    <h4>🎯 Your Turn!</h4>
+                    <p>Try creating your own RML page using the test page. Experiment with:</p>
+                    <ul>
+                        <li>Different educational tags</li>
+                        <li>RSS styling with colors and sizes</li>
+                        <li>Nested structures</li>
+                        <li>Message boxes for feedback</li>
+                    </ul>
+                    <a href="test-rml.html" class="btn">🧪 Open Test Page</a>
+                </div>
+            </div>
+
+            <div class="lesson">
+                <h2>🌟 Getting Started</h2>
+                <p>Ready to start building with RML? Here's what you can do:</p>
+                
+                <div style="text-align: center; margin: 30px 0;">
+                    <a href="test-rml.html" class="btn">🧪 Try RML Interactive Test</a>
+                    <a href="portfolio.rml" class="btn">👤 View Portfolio Example</a>
+                    <a href="welcome.html" class="btn">📚 Back to Welcome</a>
+                </div>
+
+                <div class="success">
+                    <h4>🎉 Congratulations!</h4>
+                    <p>You've learned the basics of RML and RSS styling. Start creating your own educational content and web pages!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add copy functionality to code examples
+        document.querySelectorAll('.code-example').forEach(codeBlock => {
+            codeBlock.style.cursor = 'pointer';
+            codeBlock.title = 'Click to copy';
+            
+            codeBlock.addEventListener('click', function() {
+                const text = this.textContent;
+                navigator.clipboard.writeText(text).then(() => {
+                    const originalBg = this.style.backgroundColor;
+                    this.style.backgroundColor = '#27ae60';
+                    setTimeout(() => {
+                        this.style.backgroundColor = originalBg;
+                    }, 200);
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

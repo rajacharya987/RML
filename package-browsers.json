@@ -1,0 +1,139 @@
+{
+  "name": "rml-cross-browser-extension",
+  "version": "1.0.0",
+  "description": "RML (RazzMarkupLanguage) Renderer - Cross-Browser Extension Package",
+  "main": "universal-extension/background-universal.js",
+  "author": "RazzMarkup Team",
+  "license": "MIT",
+  "homepage": "https://github.com/razzmarkup/rml",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/razzmarkup/rml.git"
+  },
+  "keywords": [
+    "rml",
+    "markup",
+    "education",
+    "browser-extension",
+    "chrome",
+    "firefox", 
+    "opera",
+    "edge",
+    "safari",
+    "webextension",
+    "cross-browser",
+    "students",
+    "learning"
+  ],
+  "browsers": {
+    "chrome": {
+      "manifest": "chrome-extension/manifest.json",
+      "version": ">=88.0",
+      "store": "https://chrome.google.com/webstore",
+      "status": "ready",
+      "features": ["full-support", "file-urls", "context-menus", "background-scripts"]
+    },
+    "firefox": {
+      "manifest": "firefox-extension/manifest.json", 
+      "version": ">=57.0",
+      "store": "https://addons.mozilla.org",
+      "status": "ready",
+      "features": ["full-support", "file-urls", "context-menus", "background-scripts"]
+    },
+    "opera": {
+      "manifest": "opera-extension/manifest.json",
+      "version": ">=60.0", 
+      "store": "https://addons.opera.com",
+      "status": "ready",
+      "features": ["chrome-compatible", "full-support", "context-menus"]
+    },
+    "edge": {
+      "manifest": "edge-extension/manifest.json",
+      "version": ">=88.0",
+      "store": "https://microsoftedge.microsoft.com/addons",
+      "status": "ready", 
+      "features": ["chrome-compatible", "full-support", "context-menus"]
+    },
+    "safari": {
+      "userscript": "safari-extension/rml-userscript.js",
+      "version": ">=14.0",
+      "store": "manual-installation",
+      "status": "partial",
+      "features": ["userscript", "basic-support", "manual-setup"]
+    },
+    "mobile": {
+      "script": "mobile-browsers/rml-mobile.js",
+      "browsers": ["android-chrome", "firefox-mobile", "safari-mobile"],
+      "status": "beta",
+      "features": ["touch-optimized", "responsive", "basic-support"]
+    }
+  },
+  "installation": {
+    "chrome": "Load unpacked extension from chrome-extension/ folder",
+    "firefox": "Install temporary add-on from firefox-extension/ folder", 
+    "opera": "Use chrome-extension/ folder with Opera developer mode",
+    "edge": "Use chrome-extension/ folder with Edge developer mode",
+    "safari": "Install rml-userscript.js with Tampermonkey",
+    "universal": "Use universal-extension/ for any WebExtension browser"
+  },
+  "features": {
+    "core": [
+      "RML syntax parsing",
+      "Educational tags",
+      "RSS styling system",
+      "Auto-detection",
+      "Real-time rendering"
+    ],
+    "cross-browser": [
+      "Universal WebExtension API",
+      "Browser-specific optimizations",
+      "Feature detection",
+      "Fallback mechanisms",
+      "Mobile responsive design"
+    ],
+    "educational": [
+      "Student-friendly syntax",
+      "Teacher lesson templates",
+      "Interactive tutorials",
+      "Progress tracking",
+      "Classroom integration"
+    ]
+  },
+  "compatibility": {
+    "desktop": {
+      "chrome": "full",
+      "firefox": "full", 
+      "opera": "full",
+      "edge": "full",
+      "safari": "partial",
+      "brave": "chrome-compatible",
+      "vivaldi": "chrome-compatible"
+    },
+    "mobile": {
+      "android-chrome": "beta",
+      "firefox-mobile": "beta", 
+      "safari-mobile": "partial",
+      "samsung-internet": "chrome-compatible"
+    },
+    "enterprise": {
+      "chromebook": "supported",
+      "windows-education": "supported",
+      "macos-education": "supported"
+    }
+  },
+  "scripts": {
+    "build-chrome": "cd chrome-extension && zip -r ../rml-chrome-extension.zip .",
+    "build-firefox": "cd firefox-extension && zip -r ../rml-firefox-addon.xpi .",
+    "build-opera": "cd opera-extension && zip -r ../rml-opera-extension.zip .",
+    "build-edge": "cd edge-extension && zip -r ../rml-edge-extension.zip .",
+    "build-universal": "cd universal-extension && zip -r ../rml-universal-extension.zip .",
+    "build-all": "npm run build-chrome && npm run build-firefox && npm run build-opera && npm run build-edge && npm run build-universal",
+    "test": "echo 'Testing RML cross-browser compatibility...'",
+    "install-deps": "echo 'No dependencies required - pure JavaScript implementation'"
+  },
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">=12.0.0"
+  }
+} 

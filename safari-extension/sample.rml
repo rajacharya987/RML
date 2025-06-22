@@ -1,0 +1,94 @@
+{head1}Welcome to RML - RazzMarkupLanguage!{.head1}
+
+{para}This is a sample document written in RML (RazzMarkupLanguage), a custom markup language with a unique syntax using curly braces and dot notation for closing tags.{.para}
+
+{head2}Basic Text Formatting{.head2}
+
+{para}Here's how you can format text in RML:{.para}
+
+{para}This is {bold}bold text{.bold} and this is {italic}italic text{.italic}.{.para}
+{para}You can also make text {underline}underlined{.underline} for emphasis.{.para}
+
+{head2}Links and Navigation{.head2}
+
+{para}Creating links is easy: {link href="https://github.com"}Visit GitHub{.link} to see more projects.{.para}
+
+{head2}Lists{.head2}
+
+{para}Here's an unordered list of RML features:{.para}
+
+{list}
+    {listitem}Simple and intuitive syntax{.listitem}
+    {listitem}Automatic HTML conversion{.listitem}
+    {listitem}Chrome extension support{.listitem}
+    {listitem}Beautiful default styling{.listitem}
+{.list}
+
+{head3}Ordered Lists{.head3}
+
+{para}And here's how to create RML documents:{.para}
+
+{orderedlist}
+    {listitem}Write your content using RML syntax{.listitem}
+    {listitem}Save the file with .rml extension{.listitem}
+    {listitem}Install the RML Chrome extension{.listitem}
+    {listitem}Open your .rml file in Chrome{.listitem}
+    {listitem}Enjoy the rendered output!{.listitem}
+{.orderedlist}
+
+{head2}Code and Quotes{.head2}
+
+{para}You can include {code}inline code{.code} using the code tag.{.para}
+
+{quote}
+"RML makes creating web content as easy as writing text, while maintaining the power and flexibility of modern web standards."
+- RML Documentation
+{.quote}
+
+{head2}Advanced Features{.head2}
+
+{para}RML supports custom attributes for advanced styling:{.para}
+
+{div class="highlight" style="background-color: #f0f8ff; padding: 10px; border-radius: 5px; border-left: 4px solid #007acc;"}
+    {head3}Custom Styled Section{.head3}
+    {para}This section demonstrates how you can add custom CSS classes and styles to your RML elements.{.para}
+{.div}
+
+{head2}Tables{.head2}
+
+{para}RML also supports table creation:{.para}
+
+{table}
+    {row}
+        {cell}Feature{.cell}
+        {cell}RML Syntax{.cell}
+        {cell}HTML Output{.cell}
+    {.row}
+    {row}
+        {cell}Headers{.cell}
+        {cell}{code}{head1}Title{.head1}{.code}{.cell}
+        {cell}{code}<h1>Title</h1>{.code}{.cell}
+    {.row}
+    {row}
+        {cell}Paragraphs{.cell}
+        {cell}{code}{para}Text{.para}{.code}{.cell}
+        {cell}{code}<p>Text</p>{.code}{.cell}
+    {.row}
+{.table}
+
+{head2}Getting Started{.head2}
+
+{para}To use RML:{.para}
+
+{orderedlist}
+    {listitem}Install the RML Chrome extension{.listitem}
+    {listitem}Create a new file with the .rml extension{.listitem}
+    {listitem}Write your content using RML syntax{.listitem}
+    {listitem}Open the file in Chrome to see it rendered{.listitem}
+{.orderedlist}
+
+{para}That's it! You're now ready to create beautiful documents with RML.{.para}
+
+{footer}
+    {para}{italic}This document was created with RML v1.0.0 - RazzMarkupLanguage{.italic}{.para}
+{.footer} 

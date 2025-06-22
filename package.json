@@ -1,0 +1,43 @@
+{
+  "name": "rml-razzmarkuplanguage",
+  "version": "1.0.0",
+  "description": "RML (RazzMarkupLanguage) - A custom markup language with intuitive curly brace syntax and Chrome extension support",
+  "main": "rml-parser.js",
+  "scripts": {
+    "test": "node test/test-parser.js",
+    "build": "echo 'Building RML project...'",
+    "start": "python -m http.server 8080",
+    "dev": "python -m http.server 8080"
+  },
+  "keywords": [
+    "markup",
+    "language",
+    "rml",
+    "parser",
+    "chrome-extension",
+    "html",
+    "converter",
+    "razzmarkuplanguage"
+  ],
+  "author": "RML Community",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rml/razzmarkuplanguage"
+  },
+  "bugs": {
+    "url": "https://github.com/rml/razzmarkuplanguage/issues"
+  },
+  "homepage": "https://github.com/rml/razzmarkuplanguage#readme",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "files": [
+    "rml-parser.js",
+    "chrome-extension/",
+    "examples/",
+    "README.md"
+  ],
+  "devDependencies": {},
+  "dependencies": {}
+} 
