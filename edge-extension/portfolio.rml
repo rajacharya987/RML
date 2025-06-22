@@ -1,0 +1,221 @@
+{container}
+  {header}[background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);][color: white;][padding: 40px;][align: center;]
+    {title}[size: giant;][weight: bold;]John Smith{.title}
+    {subtitle}[size: large;][margin: 10px 0;]Full Stack Developer & UI/UX Designer{.subtitle}
+    {text}[size: medium;][opacity: 0.9;]Passionate about creating beautiful and functional web experiences{.text}
+  {.header}
+
+  {nav}[background: white;][padding: 20px;][align: center;][shadow: 0 2px 10px rgba(0,0,0,0.1);]
+    {link href="#about"}[color: #667eea;][padding: 15px;][weight: bold;]About{.link}
+    {link href="#skills"}[color: #667eea;][padding: 15px;][weight: bold;]Skills{.link}
+    {link href="#projects"}[color: #667eea;][padding: 15px;][weight: bold;]Projects{.link}
+    {link href="#experience"}[color: #667eea;][padding: 15px;][weight: bold;]Experience{.link}
+    {link href="#education"}[color: #667eea;][padding: 15px;][weight: bold;]Education{.link}
+    {link href="#contact"}[color: #667eea;][padding: 15px;][weight: bold;]Contact{.link}
+  {.nav}
+
+  {main}[padding: 40px 20px;][background: #f8f9fa;]
+    
+    {section id="about"}[margin: 40px 0;]
+      {card}[background: white;][padding: 30px;][radius: 15px;][shadow: 0 5px 20px rgba(0,0,0,0.1);]
+        {title}[color: #667eea;][size: huge;][margin: 0 0 20px 0;]About Me{.title}
+        {text}[size: medium;][lineheight: 1.6;]
+          I'm a passionate Full Stack Developer with over 5 years of experience creating innovative web solutions. 
+          I specialize in modern JavaScript frameworks, responsive design, and user experience optimization. 
+          My goal is to bridge the gap between technical excellence and beautiful design.
+        {.text}
+        
+        {text}[size: medium;][lineheight: 1.6;][margin: 20px 0 0 0;]
+          When I'm not coding, you can find me exploring new technologies, contributing to open source projects, 
+          or enjoying outdoor photography. I believe in continuous learning and love sharing knowledge with the community.
+        {.text}
+      {.card}
+    {.section}
+
+    {section id="skills"}[margin: 40px 0;]
+      {card}[background: white;][padding: 30px;][radius: 15px;][shadow: 0 5px 20px rgba(0,0,0,0.1);]
+        {title}[color: #667eea;][size: huge;][margin: 0 0 30px 0;]Technical Skills{.title}
+        
+        {container}[display: grid;][margin: 20px 0;]
+          {card}[background: #e3f2fd;][padding: 20px;][radius: 10px;][margin: 10px;]
+            {subtitle}[color: #1976d2;][weight: bold;]Frontend Development{.subtitle}
+            {list}
+              {item}[margin: 5px 0;]React.js & Next.js{.item}
+              {item}[margin: 5px 0;]Vue.js & Angular{.item}
+              {item}[margin: 5px 0;]HTML5 & CSS3{.item}
+              {item}[margin: 5px 0;]JavaScript ES6+{.item}
+              {item}[margin: 5px 0;]TypeScript{.item}
+              {item}[margin: 5px 0;]Responsive Design{.item}
+            {.list}
+          {.card}
+          
+          {card}[background: #f3e5f5;][padding: 20px;][radius: 10px;][margin: 10px;]
+            {subtitle}[color: #7b1fa2;][weight: bold;]Backend Development{.subtitle}
+            {list}
+              {item}[margin: 5px 0;]Node.js & Express{.item}
+              {item}[margin: 5px 0;]Python & Django{.item}
+              {item}[margin: 5px 0;]PHP & Laravel{.item}
+              {item}[margin: 5px 0;]RESTful APIs{.item}
+              {item}[margin: 5px 0;]GraphQL{.item}
+              {item}[margin: 5px 0;]Microservices{.item}
+            {.list}
+          {.card}
+          
+          {card}[background: #e8f5e8;][padding: 20px;][radius: 10px;][margin: 10px;]
+            {subtitle}[color: #2e7d32;][weight: bold;]Database & DevOps{.subtitle}
+            {list}
+              {item}[margin: 5px 0;]MongoDB & MySQL{.item}
+              {item}[margin: 5px 0;]PostgreSQL{.item}
+              {item}[margin: 5px 0;]Docker & Kubernetes{.item}
+              {item}[margin: 5px 0;]AWS & Azure{.item}
+              {item}[margin: 5px 0;]CI/CD Pipelines{.item}
+              {item}[margin: 5px 0;]Git & GitHub{.item}
+            {.list}
+          {.card}
+        {.container}
+      {.card}
+    {.section}
+
+    {section id="projects"}[margin: 40px 0;]
+      {card}[background: white;][padding: 30px;][radius: 15px;][shadow: 0 5px 20px rgba(0,0,0,0.1);]
+        {title}[color: #667eea;][size: huge;][margin: 0 0 30px 0;]Featured Projects{.title}
+        
+        {container}[display: grid;][margin: 20px 0;]
+          {card}[background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);][color: white;][padding: 25px;][radius: 12px;][margin: 15px;]
+            {subtitle}[size: large;][weight: bold;][margin: 0 0 10px 0;]E-Commerce Platform{.subtitle}
+            {text}[margin: 10px 0;][opacity: 0.9;]
+              Full-stack e-commerce solution built with React, Node.js, and MongoDB. 
+              Features include real-time inventory management, payment integration, and admin dashboard.
+            {.text}
+            {text}[size: small;][margin: 15px 0 0 0;]
+              **Technologies:** React, Node.js, MongoDB, Stripe API, Socket.io
+            {.text}
+            {button}[background: rgba(255,255,255,0.2);][color: white;][border: 1px solid white;][padding: 8px 16px;][radius: 20px;][margin: 10px 5px 0 0;]View Demo{.button}
+            {button}[background: rgba(255,255,255,0.2);][color: white;][border: 1px solid white;][padding: 8px 16px;][radius: 20px;][margin: 10px 5px 0 0;]Source Code{.button}
+          {.card}
+          
+          {card}[background: linear-gradient(135deg, #2196f3 0%, #21cbf3 100%);][color: white;][padding: 25px;][radius: 12px;][margin: 15px;]
+            {subtitle}[size: large;][weight: bold;][margin: 0 0 10px 0;]Task Management App{.subtitle}
+            {text}[margin: 10px 0;][opacity: 0.9;]
+              Collaborative project management tool with real-time updates, team chat, 
+              and advanced analytics. Built for remote teams and agile workflows.
+            {.text}
+            {text}[size: small;][margin: 15px 0 0 0;]
+              **Technologies:** Vue.js, Express.js, PostgreSQL, Socket.io, Chart.js
+            {.text}
+            {button}[background: rgba(255,255,255,0.2);][color: white;][border: 1px solid white;][padding: 8px 16px;][radius: 20px;][margin: 10px 5px 0 0;]View Demo{.button}
+            {button}[background: rgba(255,255,255,0.2);][color: white;][border: 1px solid white;][padding: 8px 16px;][radius: 20px;][margin: 10px 5px 0 0;]Source Code{.button}
+          {.card}
+          
+          {card}[background: linear-gradient(135deg, #4caf50 0%, #8bc34a 100%);][color: white;][padding: 25px;][radius: 12px;][margin: 15px;]
+            {subtitle}[size: large;][weight: bold;][margin: 0 0 10px 0;]AI-Powered Analytics Dashboard{.subtitle}
+            {text}[margin: 10px 0;][opacity: 0.9;]
+              Data visualization platform with machine learning insights, predictive analytics, 
+              and customizable widgets for business intelligence.
+            {.text}
+            {text}[size: small;][margin: 15px 0 0 0;]
+              **Technologies:** React, Python, TensorFlow, D3.js, Flask API
+            {.text}
+            {button}[background: rgba(255,255,255,0.2);][color: white;][border: 1px solid white;][padding: 8px 16px;][radius: 20px;][margin: 10px 5px 0 0;]View Demo{.button}
+            {button}[background: rgba(255,255,255,0.2);][color: white;][border: 1px solid white;][padding: 8px 16px;][radius: 20px;][margin: 10px 5px 0 0;]Source Code{.button}
+          {.card}
+        {.container}
+      {.card}
+    {.section}
+
+    {section id="experience"}[margin: 40px 0;]
+      {card}[background: white;][padding: 30px;][radius: 15px;][shadow: 0 5px 20px rgba(0,0,0,0.1);]
+        {title}[color: #667eea;][size: huge;][margin: 0 0 30px 0;]Work Experience{.title}
+        
+        {card}[border: 1px solid #e9ecef;][padding: 25px;][radius: 10px;][margin: 20px 0;]
+          {subtitle}[color: #2c3e50;][size: large;][weight: bold;]Senior Full Stack Developer{.subtitle}
+          {text}[color: #667eea;][weight: bold;][margin: 5px 0;]TechCorp Solutions | 2021 - Present{.text}
+          {list}[margin: 15px 0;]
+            {item}[margin: 8px 0;]Led development of microservices architecture serving 100K+ users{.item}
+            {item}[margin: 8px 0;]Mentored junior developers and established coding best practices{.item}
+            {item}[margin: 8px 0;]Improved application performance by 40% through optimization{.item}
+            {item}[margin: 8px 0;]Collaborated with cross-functional teams on product strategy{.item}
+          {.list}
+        {.card}
+        
+        {card}[border: 1px solid #e9ecef;][padding: 25px;][radius: 10px;][margin: 20px 0;]
+          {subtitle}[color: #2c3e50;][size: large;][weight: bold;]Full Stack Developer{.subtitle}
+          {text}[color: #667eea;][weight: bold;][margin: 5px 0;]StartupXYZ | 2019 - 2021{.text}
+          {list}[margin: 15px 0;]
+            {item}[margin: 8px 0;]Built scalable web applications from ground up{.item}
+            {item}[margin: 8px 0;]Implemented CI/CD pipelines reducing deployment time by 60%{.item}
+            {item}[margin: 8px 0;]Designed and developed RESTful APIs and GraphQL endpoints{.item}
+            {item}[margin: 8px 0;]Collaborated on UI/UX design for better user experience{.item}
+          {.list}
+        {.card}
+        
+        {card}[border: 1px solid #e9ecef;][padding: 25px;][radius: 10px;][margin: 20px 0;]
+          {subtitle}[color: #2c3e50;][size: large;][weight: bold;]Frontend Developer{.subtitle}
+          {text}[color: #667eea;][weight: bold;][margin: 5px 0;]WebDesign Pro | 2018 - 2019{.text}
+          {list}[margin: 15px 0;]
+            {item}[margin: 8px 0;]Developed responsive websites using modern JavaScript frameworks{.item}
+            {item}[margin: 8px 0;]Optimized web performance and implemented SEO best practices{.item}
+            {item}[margin: 8px 0;]Created interactive user interfaces with smooth animations{.item}
+            {item}[margin: 8px 0;]Worked closely with designers to implement pixel-perfect designs{.item}
+          {.list}
+        {.card}
+      {.card}
+    {.section}
+
+    {section id="education"}[margin: 40px 0;]
+      {card}[background: white;][padding: 30px;][radius: 15px;][shadow: 0 5px 20px rgba(0,0,0,0.1);]
+        {title}[color: #667eea;][size: huge;][margin: 0 0 30px 0;]Education & Certifications{.title}
+        
+        {container}[display: grid;][margin: 20px 0;]
+          {card}[background: #f8f9fa;][padding: 20px;][radius: 10px;][margin: 10px;]
+            {subtitle}[color: #2c3e50;][weight: bold;]Bachelor of Science in Computer Science{.subtitle}
+            {text}[color: #667eea;][weight: bold;]University of Technology | 2014 - 2018{.text}
+            {text}[margin: 10px 0 0 0;]Graduated Magna Cum Laude with focus on Software Engineering and Web Technologies{.text}
+          {.card}
+          
+          {card}[background: #f8f9fa;][padding: 20px;][radius: 10px;][margin: 10px;]
+            {subtitle}[color: #2c3e50;][weight: bold;]Professional Certifications{.subtitle}
+            {list}[margin: 10px 0;]
+              {item}[margin: 5px 0;]AWS Certified Solutions Architect{.item}
+              {item}[margin: 5px 0;]Google Cloud Professional Developer{.item}
+              {item}[margin: 5px 0;]MongoDB Certified Developer{.item}
+              {item}[margin: 5px 0;]Scrum Master Certification{.item}
+            {.list}
+          {.card}
+        {.container}
+      {.card}
+    {.section}
+
+    {section id="contact"}[margin: 40px 0;]
+      {card}[background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);][color: white;][padding: 40px;][radius: 15px;][align: center;]
+        {title}[size: huge;][margin: 0 0 20px 0;]Let's Work Together!{.title}
+        {text}[size: large;][margin: 20px 0;][opacity: 0.9;]
+          I'm always interested in new opportunities and exciting projects. 
+          Let's discuss how we can bring your ideas to life!
+        {.text}
+        
+        {container}[margin: 30px 0;][align: center;]
+          {button}[background: white;][color: #667eea;][padding: 15px 30px;][radius: 25px;][weight: bold;][margin: 10px;]
+            📧 john.smith@email.com
+          {.button}
+          {button}[background: rgba(255,255,255,0.2);][color: white;][border: 1px solid white;][padding: 15px 30px;][radius: 25px;][weight: bold;][margin: 10px;]
+            📱 +1 (555) 123-4567
+          {.button}
+          {button}[background: rgba(255,255,255,0.2);][color: white;][border: 1px solid white;][padding: 15px 30px;][radius: 25px;][weight: bold;][margin: 10px;]
+            💼 LinkedIn Profile
+          {.button}
+          {button}[background: rgba(255,255,255,0.2);][color: white;][border: 1px solid white;][padding: 15px 30px;][radius: 25px;][weight: bold;][margin: 10px;]
+            🐙 GitHub Portfolio
+          {.button}
+        {.container}
+      {.card}
+    {.section}
+
+  {.main}
+
+  {footer}[background: #2c3e50;][color: white;][padding: 30px;][align: center;]
+    {text}[margin: 10px 0;]© 2024 John Smith. All rights reserved.{.text}
+    {text}[size: small;][opacity: 0.7;]Built with ❤️ using RML (RazzMarkupLanguage) and RSS Styling{.text}
+  {.footer}
+
+{.container} 

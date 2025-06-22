@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to RML & RSS!</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        
+        .intro-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .card h3 {
+            color: #667eea;
+            margin-top: 0;
+        }
+        
+        .syntax-demo {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: monospace;
+            margin: 15px 0;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .feature-list li:before {
+            content: "✅ ";
+            margin-right: 8px;
+        }
+        
+        .cta-buttons {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Welcome to RML & RSS!</h1>
+            <p>The easiest way to learn web development - perfect for students!</p>
+        </div>
+        
+        <div class="intro-cards">
+            <div class="card">
+                <h3>📝 What is RML?</h3>
+                <p><strong>RML (RazzMarkupLanguage)</strong> is like HTML but super easy! Instead of confusing brackets, use simple curly braces:</p>
+                <div class="syntax-demo">
+{title}My First Page{.title}
+{text}Hello world!{.text}
+{bold}Easy, right?{.bold}
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>🎨 What is RSS?</h3>
+                <p><strong>RSS (Razz Styling Style)</strong> is like CSS but simple! Style your pages with easy commands:</p>
+                <div class="syntax-demo">
+[color: blue;]
+[size: large;] 
+[background: yellow;]
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>🎓 Perfect for Learning</h3>
+            <ul class="feature-list">
+                <li>Easy to read and write - no confusing symbols</li>
+                <li>Beginner-friendly tag names like {text} instead of &lt;p&gt;</li>
+                <li>Clear opening and closing with dots: {title}...{.title}</li>
+                <li>Special educational tags for lessons and exercises</li>
+                <li>Instant preview in Chrome with our extension</li>
+                <li>Converts to real HTML automatically</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h3>🏁 Quick Start</h3>
+            <p><strong>Step 1:</strong> Create a file called <code>test.rml</code></p>
+            <p><strong>Step 2:</strong> Add this content:</p>
+            <div class="syntax-demo">
+{title}My First RML Page{.title}
+{text}I'm learning RML and it's fun!{.text}
+{success}This is so easy!{.success}
+            </div>
+            <p><strong>Step 3:</strong> Open the file in Chrome and see the magic! ✨</p>
+        </div>
+        
+        <div class="cta-buttons">
+            <a href="#" class="btn" onclick="createSample()">📄 Create Sample File</a>
+            <a href="../test-rml.html" class="btn" target="_blank">🧪 Try Online</a>
+            <a href="#" class="btn" onclick="showTutorial()">📚 View Tutorial</a>
+        </div>
+        
+        <div style="text-align: center; margin-top: 30px; color: #666;">
+            <p>🎉 You're ready to start creating amazing web pages with RML!</p>
+            <p><small>Extension installed successfully - start creating .rml files now!</small></p>
+        </div>
+    </div>
+    
+    <script>
+        function createSample() {
+            const content = `{title}My First RML Page{.title}
+
+{text}Hello! I'm learning RML - the easy way to create web pages.{.text}
+
+{subtitle}About Me{.subtitle}
+{text}I'm a student learning web development with RML because it's simple and fun!{.text}
+
+{list}
+    {item}Easy to learn{.item}
+    {item}Beginner-friendly{.item}
+    {item}Works in Chrome{.item}
+{.list}
+
+{success}I created my first RML page!{.success}`;
+            
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'my-first-page.rml';
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+        
+        function showTutorial() {
+            alert('Check the examples folder for:\n\n• student-tutorial.rml - Complete beginner tutorial\n• sample.rml - Basic examples\n• blog-post.rml - Real-world example\n\nCreate .rml files and open them in Chrome!');
+        }
+    </script>
+</body>
+</html> 

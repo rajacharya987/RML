@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RML Renderer</title>
+    <style>
+        body {
+            width: 300px;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .tagline {
+            font-size: 12px;
+            opacity: 0.9;
+        }
+        
+        .status {
+            background: rgba(255,255,255,0.2);
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .controls {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        button {
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        
+        button:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+        
+        button:active {
+            transform: translateY(0);
+        }
+        
+        .feature-list {
+            font-size: 12px;
+            margin-top: 15px;
+            opacity: 0.9;
+        }
+        
+        .feature-list li {
+            margin: 3px 0;
+        }
+        
+        .version {
+            text-align: center;
+            font-size: 10px;
+            margin-top: 15px;
+            opacity: 0.7;
+        }
+        
+        .syntax-help {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-size: 12px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .syntax-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .syntax-example {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 8px;
+            border-radius: 5px;
+            font-family: monospace;
+            margin: 5px 0;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 11px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">🚀 RML</div>
+        <div class="tagline">RazzMarkupLanguage for Students</div>
+    </div>
+    
+    <div class="status">
+        <div id="status">🔍 Checking RML status...</div>
+    </div>
+    
+    <div class="controls">
+        <button id="toggleRML">🔄 Toggle RML Rendering</button>
+        <button id="testRML">🧪 Test RML Parser</button>
+        <button id="openWelcome">📚 Open Tutorial</button>
+        <button id="openTest">🛠️ Open Test Page</button>
+    </div>
+    
+    <ul class="feature-list">
+        <li>✅ Educational tags</li>
+        <li>✅ RSS styling system</li>
+        <li>✅ Cross-browser support</li>
+        <li>✅ Beginner-friendly syntax</li>
+    </ul>
+    
+    <div class="version">v1.0.0 - Educational Edition</div>
+    
+    <div class="syntax-help">
+        <div class="syntax-title">Quick RML Syntax:</div>
+        <div class="syntax-example">{head1}Title{.head1}</div>
+        <div class="syntax-example">{para}Text{.para}</div>
+        <div class="syntax-example">{bold}Bold{.bold}</div>
+        <div class="syntax-example">{link href="url"}Link{.link}</div>
+    </div>
+    
+    <div class="footer">
+        RML v1.0.0 - Powered by Chrome Extensions
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html> 

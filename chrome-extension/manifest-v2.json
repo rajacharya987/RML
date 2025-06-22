@@ -1,0 +1,64 @@
+{
+  "manifest_version": 2,
+  "name": "RML (RazzMarkupLanguage) Renderer",
+  "version": "1.0.0",
+  "description": "Cross-browser extension to render .rml files using RazzMarkupLanguage syntax - perfect for students!",
+  
+  "permissions": [
+    "activeTab",
+    "storage",
+    "contextMenus",
+    "webNavigation",
+    "tabs",
+    "<all_urls>"
+  ],
+  
+  "background": {
+    "scripts": ["background-v2.js"],
+    "persistent": false
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["rml-parser.js", "content-script-v2.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  
+  "web_accessible_resources": [
+    "rml-parser.js",
+    "welcome.html"
+  ],
+  
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "RML Renderer",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "rml-renderer@razzmarkup.dev",
+      "strict_min_version": "57.0"
+    }
+  },
+  
+  "applications": {
+    "gecko": {
+      "id": "rml-renderer@razzmarkup.dev",
+      "strict_min_version": "57.0"
+    }
+  }
+} 

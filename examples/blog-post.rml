@@ -1,0 +1,111 @@
+{head1}My Journey with Custom Markup Languages{.head1}
+
+{para}Published on: March 15, 2024 | By: RML Developer{.para}
+
+{head2}Introduction{.head2}
+
+{para}Today I want to share my experience creating {bold}RML (RazzMarkupLanguage){.bold}, a custom markup language that makes writing structured content more intuitive and fun.{.para}
+
+{quote}
+"The best tools are the ones that feel natural to use, almost like they're an extension of your own thoughts."
+{.quote}
+
+{head2}Why Create Another Markup Language?{.head2}
+
+{para}You might wonder: "Why create another markup language when we already have HTML, Markdown, and others?" Here are my reasons:{.para}
+
+{list}
+    {listitem}{bold}Intuitive Syntax:{.bold} The curly brace notation feels more natural than angle brackets{.listitem}
+    {listitem}{bold}Clear Closing Tags:{.bold} The dot notation makes it obvious where tags end{.listitem}
+    {listitem}{bold}Easy to Learn:{.bold} Simple rules that anyone can pick up quickly{.listitem}
+    {listitem}{bold}Powerful Features:{.bold} All the functionality of HTML with simpler syntax{.listitem}
+{.list}
+
+{head2}The Technical Journey{.head2}
+
+{para}Building RML involved several key components:{.para}
+
+{head3}1. The Parser{.head3}
+
+{para}The heart of RML is its parser, written in JavaScript. It uses regular expressions to identify RML patterns and convert them to HTML:{.para}
+
+{para}Example transformation: {code}{head1}Title{.head1}{.code} becomes {code}<h1>Title</h1>{.code}{.para}
+
+{head3}2. Chrome Extension{.head3}
+
+{para}To make RML accessible, I created a Chrome extension that:{.para}
+
+{orderedlist}
+    {listitem}Detects .rml files automatically{.listitem}
+    {listitem}Parses RML content in real-time{.listitem}
+    {listitem}Applies beautiful default styling{.listitem}
+    {listitem}Provides a user-friendly interface{.listitem}
+{.orderedlist}
+
+{head2}Real-World Examples{.head2}
+
+{para}Here's how RML compares to other markup languages:{.para}
+
+{table}
+    {row}
+        {cell}{bold}Language{.bold}{.cell}
+        {cell}{bold}Heading Syntax{.bold}{.cell}
+        {cell}{bold}Link Syntax{.bold}{.cell}
+    {.row}
+    {row}
+        {cell}HTML{.cell}
+        {cell}{code}<h1>Title</h1>{.code}{.cell}
+        {cell}{code}<a href="url">Text</a>{.code}{.cell}
+    {.row}
+    {row}
+        {cell}Markdown{.cell}
+        {cell}{code}# Title{.code}{.cell}
+        {cell}{code}[Text](url){.code}{.cell}
+    {.row}
+    {row}
+        {cell}RML{.cell}
+        {cell}{code}{head1}Title{.head1}{.code}{.cell}
+        {cell}{code}{link href="url"}Text{.link}{.code}{.cell}
+    {.row}
+{.table}
+
+{head2}What's Next?{.head2}
+
+{para}I'm excited about the future of RML! Here's what's coming:{.para}
+
+{list}
+    {listitem}{bold}Syntax Highlighting:{.bold} Editor support for .rml files{.listitem}
+    {listitem}{bold}More Tags:{.bold} Expanding the tag library{.listitem}
+    {listitem}{bold}Themes:{.bold} Multiple styling options{.listitem}
+    {listitem}{bold}Community:{.bold} Open source development{.listitem}
+{.list}
+
+{head2}Try It Yourself!{.head2}
+
+{para}Want to experience RML? Here's how to get started:{.para}
+
+{orderedlist}
+    {listitem}Download the Chrome extension from the examples folder{.listitem}
+    {listitem}Create a new file called {code}test.rml{.code}{.listitem}
+    {listitem}Write some content using RML syntax{.listitem}
+    {listitem}Open it in Chrome and see the magic happen!{.listitem}
+{.orderedlist}
+
+{quote}
+"The journey of a thousand websites begins with a single tag."
+- Ancient Web Developer Proverb
+{.quote}
+
+{head2}Conclusion{.head2}
+
+{para}Creating RML has been an incredible learning experience. It's shown me that sometimes the best solutions come from stepping back and asking: {italic}"How can we make this better?"{.italic}{.para}
+
+{para}I hope you'll give RML a try and let me know what you think. The future of markup is in our hands!{.para}
+
+{para}Happy coding! 🚀{.para}
+
+{footer}
+    {para}---{.para}
+    {para}Thanks for reading! If you enjoyed this post, share it with fellow developers.{.para}
+    {para}{link href="mailto:developer@rml.com"}Contact me{.link} | {link href="https://github.com/rml"}GitHub{.link} | {link href="https://twitter.com/rml"}Twitter{.link}{.para}
+{.footer} 
